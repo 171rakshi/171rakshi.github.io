@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakshitha E | Software Developer</title>
+  <meta name="description"
+    content="Portfolio of Rakshitha E - software developer specializing in Node.js, Express, Python, Django, MongoDB, PostgreSQL, REST APIs, RBAC, and cloud SaaS platforms.">
+  <meta name="keywords"
+    content="Rakshitha E, Software Developer, Node.js, Python, Django, Express.js, MongoDB, PostgreSQL, REST APIs, Bengaluru, Full Stack">
+  <meta property="og:title" content="Rakshitha E | Software Developer">
+  <meta property="og:description"
+    content="Scalable REST APIs, Role-Based Access Control (RBAC), and high-performance microservices.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="theme-dark">
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Main Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Rakshitha</span>
+        <span class="brand-dot">.dev</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <div class="nav-links" id="desktopNavLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Open navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawerBackdrop" class="drawer-backdrop hidden"></div>
+  <aside id="mobileDrawer" class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Navigation</span>
+      <button id="closeDrawerBtn" class="btn-close">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#about" class="drawer-link">About & Overview</a>
+      <a href="#skills" class="drawer-link">Technical Skills</a>
+      <a href="#experience" class="drawer-link">Work Experience</a>
+      <a href="#projects" class="drawer-link">Projects Portfolio</a>
+      <a href="#education" class="drawer-link">Education</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </div>
+    <div class="drawer-footer">
+      <a href="https://github.com/171rakshi/Quickcare" class="btn btn-primary btn-block" target="_blank"
+        rel="noopener noreferrer">
+        ⭐ View QuickCare on GitHub
+      </a>
+      <a href="mailto:rakshithasannira2003@gmail.com" class="btn btn-secondary btn-block">
+        ✉️ Email Rakshitha
+      </a>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-pill">
+          <span class="pulse-green"></span>
+          <span>Available for Software Developer Roles &bull; Bengaluru, India</span>
+        </div>
+
+        <h1 class="hero-title">
+          Architecting Scalable <span class="gradient-text">Software Systems</span> & Resilient APIs.
+        </h1>
+
+        <p class="hero-bio">
+          I'm <strong>Rakshitha E</strong>, a software developer delivering production-grade web applications,
+          REST APIs, role-based access control (RBAC), and third-party integrations using <strong>Node.js</strong>,
+          <strong>Express.js</strong>, <strong>Python</strong>, <strong>Django</strong>, <strong>MongoDB</strong>, and
+          <strong>PostgreSQL</strong>.
+        </p>
+
+        <div class="hero-cta-group">
+          <!-- Live working project link -->
+          <a href="https://github.com/171rakshi/Quickcare" class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+            id="liveProjectHeroBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>View QuickCare (GitHub)</span>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>Explore Projects</span>
+          </a>
+          <button id="viewResumeBtn" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+            <span>View Resume</span>
+          </button>
+        </div>
+
+        <div class="hero-contact-quick">
+          <a href="mailto:rakshithasannira2003@gmail.com" class="quick-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>rakshithasannira2003@gmail.com</span>
+          </a>
+          <a href="tel:+919686344910" class="quick-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>+91 9686344910</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Developer Profile & Engineering Overview Card -->
+      <div class="hero-visual">
+        <div class="card dev-profile-card">
+          <!-- Card Header with Avatar Monogram & Status -->
+          <div class="dev-card-header">
+            <div class="dev-avatar-monogram">
+              <span>RE</span>
+            </div>
+            <div class="dev-header-text">
+              <div class="dev-name-row">
+                <h3>Rakshitha E</h3>
+                <span class="verified-check" title="Verified Software Developer">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+              </div>
+              <p class="dev-role">Software Developer</p>
+              <div class="dev-location-pill">
+                <span class="pulse-green"></span>
+                <span>Bengaluru, India &bull; Open for Hire</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Metrics Mini-Grid -->
+          <div class="dev-metrics-grid">
+            <div class="metric-mini-box">
+              <span class="mm-val">6+ Mos</span>
+              <span class="mm-lbl">Production SaaS</span>
+            </div>
+            <div class="metric-mini-box">
+              <span class="mm-val">8.34</span>
+              <span class="mm-lbl">CGPA (B.E. CSE)</span>
+            </div>
+            <div class="metric-mini-box">
+              <span class="mm-val">4+</span>
+              <span class="mm-lbl">3rd-Party APIs</span>
+            </div>
+            <div class="metric-mini-box">
+              <span class="mm-val text-emerald">99.8%</span>
+              <span class="mm-lbl">Sync Reliability</span>
+            </div>
+          </div>
+
+          <!-- Core Specializations -->
+          <div class="dev-specialties-block">
+            <span class="block-title">CORE SPECIALIZATIONS</span>
+            <div class="dev-spec-list">
+              <div class="spec-item">
+                <span class="spec-icon">🛡️</span>
+                <span>Controller-Service-Repository Pattern</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔐</span>
+                <span>Role-Based Access Control (RBAC) & JWT</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">🔄</span>
+                <span>Scheduled Cron Data Reconciliation</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-icon">💳</span>
+                <span>Payment Gateways & Real-Time Sync</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Tech Stack Chips -->
+          <div class="dev-tech-chips-block">
+            <span class="block-title">PRIMARY STACK</span>
+            <div class="tech-chips-row">
+              <span class="tech-chip">Node.js</span>
+              <span class="tech-chip">Express.js</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Django</span>
+              <span class="tech-chip">PostgreSQL</span>
+              <span class="tech-chip">MongoDB</span>
+              <span class="tech-chip">React 19</span>
+              <span class="tech-chip">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Card Bottom Action Row -->
+          <div class="dev-card-footer">
+            <button class="btn btn-sm btn-primary" onclick="openModal('resumeModal')">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>View Resume</span>
+            </button>
+            <a href="#contact" class="btn btn-sm btn-secondary">
+              <span>Contact Me</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Ribbon -->
+  <section class="stats-ribbon">
+    <div class="container stats-grid">
+      <div class="stat-box">
+        <span class="stat-number">6+</span>
+        <span class="stat-title">Months Production SaaS</span>
+        <span class="stat-desc">Kods Technologies Pvt Ltd</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">4+</span>
+        <span class="stat-title">3rd-Party Integrations</span>
+        <span class="stat-desc">Razorpay, Firebase, Socket.io, PDFKit</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">100+</span>
+        <span class="stat-title">Active Users Served</span>
+        <span class="stat-desc">Marketplace & ISP Platform</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">8.34</span>
+        <span class="stat-title">CGPA Engineering</span>
+        <span class="stat-desc">B.E. Computer Science, MVJCE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ENGINEERING PHILOSOPHY</span>
+        <h2 class="section-title">Built for Reliability, Performance & Scale</h2>
+        <p class="section-subtitle">Writing clean, maintainable backend services with robust layered boundaries and zero
+          tolerance for data discrepancies.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card about-card">
+          <div class="about-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z" />
+              <path d="M21 12H16.5" />
+            </svg>
+          </div>
+          <h3>Layered Architectural Integrity</h3>
+          <p>Strictly separation of concerns across <strong>Controller</strong> (request routing & validation),
+            <strong>Service</strong> (business logic orchestration), and <strong>Repository</strong> (database
+            abstraction) layers with centralized error management.
+          </p>
+        </div>
+
+        <div class="card about-card">
+          <div class="about-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+          </div>
+          <h3>Enterprise Security & RBAC</h3>
+          <p>Deep experience engineering fine-grained Role-Based Access Control, JWT authentication with tenant-isolated
+            payload claims, OTP validation workflows, and Joi payload schema protection against malicious payloads.</p>
+        </div>
+
+        <div class="card about-card">
+          <div class="about-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10" />
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+            </svg>
+          </div>
+          <h3>Data Synchronization & Reconciliation</h3>
+          <p>Expertise implementing scheduled cron reconciliation jobs to sync multiple external payment gateways
+            (Razorpay) and billing databases, eliminating mismatches and ledger drift in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TECHNICAL ARSENAL</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Battle-tested tools and frameworks utilized across production and personal
+          deployments.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend Core -->
+        <div class="card skill-group-card">
+          <div class="skill-group-header">
+            <div class="group-icon purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2" />
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2" />
+                <line x1="6" y1="6" x2="6.01" y2="6" />
+                <line x1="6" y1="18" x2="6.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Backend Architecture</h3>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">Express.js</span>
+            <span class="skill-pill">Django (MVT)</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Controller-Service-Repo</span>
+            <span class="skill-pill">API Integrations</span>
+            <span class="skill-pill">Joi Schema Validation</span>
+          </div>
+        </div>
+
+        <!-- Languages & Databases -->
+        <div class="card skill-group-card">
+          <div class="skill-group-header">
+            <div class="group-icon cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              </svg>
+            </div>
+            <h3>Languages & Databases</h3>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">JavaScript (ES6+)</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Multi-Tenant Modeling</span>
+          </div>
+        </div>
+
+        <!-- Auth & Security -->
+        <div class="card skill-group-card">
+          <div class="skill-group-header">
+            <div class="group-icon emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Auth & Quality Assurance</h3>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">JWT (JSON Web Tokens)</span>
+            <span class="skill-pill">Role-Based Access (RBAC)</span>
+            <span class="skill-pill">OTP Workflows</span>
+            <span class="skill-pill">Centralized Error Handling</span>
+            <span class="skill-pill">Vitest Unit Testing</span>
+          </div>
+        </div>
+
+        <!-- Real-time & Tools -->
+        <div class="card skill-group-card">
+          <div class="skill-group-header">
+            <div class="group-icon amber">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+              </svg>
+            </div>
+            <h3>Cloud, Real-Time & Utilities</h3>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">Socket.io</span>
+            <span class="skill-pill">Razorpay Payments</span>
+            <span class="skill-pill">Firebase Cloud Messaging</span>
+            <span class="skill-pill">Cloudinary CDN</span>
+            <span class="skill-pill">PDFKit Engine</span>
+            <span class="skill-pill">ExcelJS</span>
+            <span class="skill-pill">Git / GitHub</span>
+          </div>
+        </div>
+
+        <!-- Frontend Skills -->
+        <div class="card skill-group-card full-width-sm">
+          <div class="skill-group-header">
+            <div class="group-icon rose">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                <polyline points="2 17 12 22 22 17" />
+                <polyline points="2 12 12 17 22 12" />
+              </svg>
+            </div>
+            <h3>Frontend Engineering Capabilities</h3>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">React.js (React 19)</span>
+            <span class="skill-pill">Vite</span>
+            <span class="skill-pill">TanStack Query</span>
+            <span class="skill-pill">TanStack Table</span>
+            <span class="skill-pill">Zustand State Store</span>
+            <span class="skill-pill">React Router</span>
+            <span class="skill-pill">HTML5 & Modern CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section (Company Projects - NO EXTERNAL LINKS) -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">WORK EXPERIENCE</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          Hands-on enterprise engineering. <em>(Note: Proprietary enterprise client systems with internal architectures
+            &bull; external links restricted for data confidentiality)</em>
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <!-- Job 1: Kods Technologies -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <div>
+                <span class="company-badge">🏢 Enterprise SaaS Production</span>
+                <h3 class="role-title">MERN Stack Developer</h3>
+                <h4 class="company-name">Kods Technologies Private Limited &bull; Bengaluru</h4>
+              </div>
+              <div class="exp-duration">
+                <span class="badge-time">6 Months</span>
+              </div>
+            </div>
+
+            <!-- Company Project A: ActivLine -->
+            <div class="company-project-box">
+              <div class="cp-title-row">
+                <div class="cp-title-meta">
+                  <span class="status-confidential">Internal Enterprise System</span>
+                  <h4>ActivLine: ISP Customer Management Platform</h4>
+                </div>
+                <button class="btn btn-sm btn-secondary" onclick="openActivLineModal()">
+                  Architecture & Specs
+                </button>
+              </div>
+              <p class="cp-desc">
+                Engineered the core backend services for a multi-tenant Internet Service Provider (ISP) management
+                platform operating at scale.
+              </p>
+              <ul class="bullet-list">
+                <li>Built resilient backend services with <strong>Node.js, Express.js, MongoDB, and PostgreSQL</strong>
+                  for multi-tenant isolation with JWT authentication and Role-Based Access Control (RBAC).</li>
+                <li>Integrated <strong>4+ third-party REST APIs</strong> to synchronize subscriber profiles, plan
+                  lifecycles, and billing ledgers; implemented scheduled cron reconciliation engines to eradicate
+                  billing mismatches.</li>
+                <li>Automated payment processing, customer push notifications, real-time status sync, and PDF/Excel
+                  financial reports using <strong>Razorpay, Firebase, Socket.io, PDFKit, and ExcelJS</strong>.</li>
+                <li>Structured codebase strictly in <strong>Controller-Service-Repository</strong> layers with Joi
+                  request schema validation and centralized exception handling; authored Vitest unit test suites.</li>
+              </ul>
+              <div class="cp-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Razorpay</span>
+                <span>Socket.io</span>
+                <span>PDFKit</span>
+                <span>Vitest</span>
+              </div>
+            </div>
+
+            <!-- Company Project B: JOMS -->
+            <div class="company-project-box">
+              <div class="cp-title-row">
+                <div class="cp-title-meta">
+                  <span class="status-confidential">Internal Enterprise Platform</span>
+                  <h4>JOMS: Marketplace Management Platform</h4>
+                </div>
+                <button class="btn btn-sm btn-secondary" onclick="openJomsModal()">
+                  System Architecture
+                </button>
+              </div>
+              <p class="cp-desc">
+                Architected a full-stack marketplace ecosystem uniting venues, domain experts, client bookings,
+                memberships, and referral pipelines for 100+ active users.
+              </p>
+              <ul class="bullet-list">
+                <li>Engineered end-to-end booking, recurring subscription, and payment transaction flows paired with
+                  live venue availability calendars and analytical dashboard metrics.</li>
+                <li>Built reusable backend microservices for automated media uploads (Cloudinary), streaming Excel data
+                  exports, administrative approval lifecycles, bulk actions, and cursor-based pagination.</li>
+                <li>Implemented RBAC boundaries protecting expert consultations and admin approval pipelines.</li>
+              </ul>
+              <div class="cp-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Cloudinary</span>
+                <span>ExcelJS</span>
+                <span>RBAC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2: PySpiders -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <div>
+                <span class="company-badge">🏢 Python & Django Internship</span>
+                <h3 class="role-title">Python Full Stack Development Intern</h3>
+                <h4 class="company-name">PySpiders &bull; Bengaluru</h4>
+              </div>
+              <div class="exp-duration">
+                <span class="badge-time">Apr 2025 – Oct 2025</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Architected database-driven web applications leveraging <strong>Django MVT
+                  (Model-View-Template)</strong> architecture, JavaScript, and relational SQL.</li>
+              <li>Engineered user-facing responsive interfaces integrated with Django ORM queries, templates, secure
+                session handling, and authentication views.</li>
+              <li>Designed and optimized SQL database schemas and model relationships for structured data persistence.
+              </li>
+            </ul>
+            <div class="cp-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>MVT Architecture</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3: Campus To Technical Careers -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content card">
+            <div class="exp-header">
+              <div>
+                <span class="company-badge">🏢 Full Stack Internship</span>
+                <h3 class="role-title">Full Stack Development Intern</h3>
+                <h4 class="company-name">Campus To Technical Careers &bull; Bengaluru</h4>
+              </div>
+              <div class="exp-duration">
+                <span class="badge-time">3 Months</span>
+              </div>
+            </div>
+            <ul class="bullet-list">
+              <li>Built an end-to-end e-commerce shopping platform covering responsive UI layouts, client state
+                management, cart checkout workflows, and SQL persistence.</li>
+              <li>Implemented user interaction handling with HTML5, CSS3, JavaScript, and managed version control
+                through Git.</li>
+            </ul>
+            <div class="cp-tags">
+              <span>HTML5 / CSS3</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Featured Working Personal Project + Readify Explanation) -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PORTFOLIO HIGHLIGHTS</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Test the interactive personal project live, and explore the AI/NLP system architecture of Readify.
+        </p>
+      </div>
+
+      <!-- Project Filter Pills -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="personal">⭐ Personal (Live Working App)</button>
+        <button class="filter-btn" data-filter="ai">🤖 AI / NLP (Readify)</button>
+        <button class="filter-btn" data-filter="company">🏢 Enterprise (Proprietary)</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: QuickCare (Personal Project with Working Link!) -->
+        <div class="card project-card featured-card" data-category="personal">
+          <div class="project-badge-row">
+            <span class="badge-featured">⭐ PERSONAL PROJECT &bull; GITHUB REPOSITORY</span>
+            <span class="badge-tech">React 19 &bull; TypeScript &bull; Python &bull; Django REST &bull; SimpleJWT</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">QuickCare: Real-Time Hospital OPD Queue Management Platform</h3>
+            <p class="project-pitch">
+              A production-ready outpatient department (OPD) queue orchestration platform architected by Rakshitha to eliminate waiting room congestion, streamline doctor consultation desks, and deliver transparent live digital tokens for patients. Built with a full-stack architecture featuring a React 19 + TypeScript frontend and a Python / Django REST Framework backend with SimpleJWT authentication.
+            </p>
+
+            <div class="feature-bullets-grid">
+              <div class="feature-bullet">
+                <span class="fb-icon">🎫</span>
+                <div>
+                  <strong>Live 5-Second Queue Tracker:</strong>
+                  <p>Dynamic wait-time calculation, live queue position counters, and automated audio-visual call alerts for booked patients.</p>
+                </div>
+              </div>
+              <div class="feature-bullet">
+                <span class="fb-icon">🩺</span>
+                <div>
+                  <strong>Doctor Clinical Calling Desk:</strong>
+                  <p>One-click patient queue workflows ("Call Next Patient", "Complete Visit", "Skip/No-Show") and daily clinical schedules.</p>
+                </div>
+              </div>
+              <div class="feature-bullet">
+                <span class="fb-icon">🏥</span>
+                <div>
+                  <strong>Hospital Administration Console:</strong>
+                  <p>Centralized operational directory of registered hospitals, clinical departments, doctor account provisioning, and audit logs.</p>
+                </div>
+              </div>
+              <div class="feature-bullet">
+                <span class="fb-icon">🔐</span>
+                <div>
+                  <strong>Secure Auth & API Design:</strong>
+                  <p>SimpleJWT role-scoped authentication, structured Django REST serializers, and relational schema modeling.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>React 19</span>
+              <span>TypeScript</span>
+              <span>Vite</span>
+              <span>Tailwind CSS v4</span>
+              <span>Python 3</span>
+              <span>Django</span>
+              <span>Django REST Framework</span>
+              <span>SimpleJWT</span>
+              <span>PostgreSQL / SQLite</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <!-- DIRECT LINK THAT OPENS THE QUICKCARE WORKING APPLICATION / GITHUB REPO -->
+            <a href="https://github.com/171rakshi/Quickcare" class="btn btn-primary btn-lg" target="_blank"
+              rel="noopener noreferrer" id="launchWorkingAppCardBtn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>View QuickCare on GitHub &rarr;</span>
+            </a>
+            <a href="http://localhost:5173/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" title="Open local QuickCare app if running">
+              ⚡ Open Local App (localhost:5173)
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Readify (Detailed Explanation as requested!) -->
+        <div class="card project-card" data-category="ai">
+          <div class="project-badge-row">
+            <span class="badge-ai">🤖 AI & SPEECH RECOGNITION</span>
+            <span class="badge-status-yellow">⚡ Live Link Connecting Soon (Under Deployment)</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Readify: AI-Based Reading Enhancement Tool</h3>
+            <p class="project-pitch">
+              An intelligent reading assistant that tracks reading speed and delivers real-time auditory and
+              comprehension feedback. Built using React.js frontend, Python backend, Natural Language Processing (NLP),
+              and speech recognition algorithms.
+            </p>
+
+            <div class="readify-explanation-box">
+              <h4 class="box-title">System Architecture & Technical Capabilities:</h4>
+              <ul class="bullet-list">
+                <li>
+                  <strong>Real-Time Speech Recognition:</strong> Captures microphone audio streams and utilizes Python
+                  speech recognition to phonetically evaluate pronunciation accuracy and syllable rhythm.
+                </li>
+                <li>
+                  <strong>NLP Efficiency & Comprehension Analysis:</strong> Natural Language Processing pipelines
+                  calculate Words-Per-Minute (WPM), hesitation duration, and vocabulary retention to measure true
+                  reading comprehension.
+                </li>
+                <li>
+                  <strong>Progress Visualization Dashboard:</strong> React-powered analytics suite graphing user fluency
+                  curves, pronunciation error hotspots, and recommending tailored reading exercises.
+                </li>
+              </ul>
+              <div class="architecture-flow-diagram">
+                <div class="flow-step">Audio Stream (Mic)</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">Python Speech Engine</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">NLP Pronunciation & WPM</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-step">React 19 Dashboard</div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span>React.js</span>
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Speech Recognition</span>
+              <span>Audio Processing</span>
+              <span>Data Visualization</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button class="btn btn-secondary" onclick="openReadifyModal()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
+              </svg>
+              <span>Deep-Dive System Explanation</span>
+            </button>
+            <span class="notice-text">Note: Live domain deployment will be linked shortly.</span>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: ActivLine ISP SaaS (Company Project - Explained, NO Link) -->
+        <div class="card project-card" data-category="company">
+          <div class="project-badge-row">
+            <span class="badge-company">🏢 COMPANY PROJECT &bull; KODS TECHNOLOGIES</span>
+            <span class="badge-confidential">Internal Enterprise System &bull; No Public Link</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">ActivLine: Multi-Tenant ISP Operations SaaS</h3>
+            <p class="project-pitch">
+              A high-availability ISP subscriber and infrastructure management system with automated billing cycles,
+              third-party payment gateways, and data reconciliation.
+            </p>
+            <ul class="bullet-list">
+              <li>Engineered Controller-Service-Repository architecture in Node.js & Express with PostgreSQL and
+                MongoDB.</li>
+              <li>Synchronized 4+ third-party REST APIs and executed cron jobs to maintain 99.8% billing accuracy.</li>
+              <li>Automated real-time notifications via Firebase/Socket.io and PDF/Excel generation via PDFKit/ExcelJS.
+              </li>
+            </ul>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>PostgreSQL</span>
+              <span>MongoDB</span>
+              <span>Razorpay</span>
+              <span>Vitest</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button class="btn btn-secondary" onclick="openActivLineModal()">
+              <span>View Technical Specifications</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: JOMS Marketplace Platform (Company Project - Explained, NO Link) -->
+        <div class="card project-card" data-category="company">
+          <div class="project-badge-row">
+            <span class="badge-company">🏢 COMPANY PROJECT &bull; KODS TECHNOLOGIES</span>
+            <span class="badge-confidential">Enterprise Platform &bull; No Public Link</span>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">JOMS: Multi-Tier Marketplace Platform</h3>
+            <p class="project-pitch">
+              A full-stack ecosystem for booking venue slots, consulting subject experts, and managing recurring
+              memberships for 100+ active users.
+            </p>
+            <ul class="bullet-list">
+              <li>Engineered booking slot availability tracking, approvals, and transaction tracking.</li>
+              <li>Built reusable backend microservices for Cloudinary file uploads and Excel exports with Vitest
+                coverage.</li>
+            </ul>
+            <div class="project-tags">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>Cloudinary</span>
+              <span>ExcelJS</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button class="btn btn-secondary" onclick="openJomsModal()">
+              <span>View Platform Architecture</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ACADEMIC BACKGROUND</span>
+        <h2 class="section-title">Education & Qualifications</h2>
+        <p class="section-subtitle">Strong foundational coursework in computer science, algorithms, and software
+          engineering.</p>
+      </div>
+
+      <div class="education-grid">
+        <div class="card edu-card">
+          <div class="edu-icon purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <h3>B.E. in Computer Science</h3>
+              <span class="edu-score">CGPA: 8.34</span>
+            </div>
+            <p class="edu-institution">MVJ College of Engineering, Bengaluru</p>
+            <span class="edu-year">2021 &ndash; 2025</span>
+            <p class="edu-details">
+              Focus areas: Data Structures & Algorithms, Database Management Systems (DBMS), Operating Systems, Computer
+              Networks, and Object-Oriented Software Design.
+            </p>
+          </div>
+        </div>
+
+        <div class="card edu-card">
+          <div class="edu-icon cyan">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+          </div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <h3>PUC (PCMB &bull; Science)</h3>
+              <span class="edu-score">Score: 92.8%</span>
+            </div>
+            <p class="edu-institution">Sri Vasavi P U College, Challakere</p>
+            <span class="edu-year">Completed 2021</span>
+            <p class="edu-details">
+              Physics, Chemistry, Mathematics, and Biology with high academic distinction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LET'S CONNECT</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Interested in collaborating or discussing full-time opportunities? Feel free to
+          reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <a href="mailto:rakshithasannira2003@gmail.com" class="card contact-card">
+            <div class="c-icon purple">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="c-details">
+              <span class="c-label">Email Address</span>
+              <strong class="c-val">rakshithasannira2003@gmail.com</strong>
+            </div>
+          </a>
+
+          <a href="tel:+919686344910" class="card contact-card">
+            <div class="c-icon cyan">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="c-details">
+              <span class="c-label">Direct Phone</span>
+              <strong class="c-val">+91 9686344910</strong>
+            </div>
+          </a>
+
+          <div class="card contact-card">
+            <div class="c-icon emerald">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="c-details">
+              <span class="c-label">Current Location</span>
+              <strong class="c-val">Bengaluru, Karnataka, India</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="card contact-form-card">
+          <form id="portfolioContactForm">
+            <h3>Send a Message</h3>
+            <p class="form-desc">Messages trigger direct client validation and simulated inbox delivery.</p>
+
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" required placeholder="Alex Turner">
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" required placeholder="alex@company.com">
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" required placeholder="Software Developer Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="4" required
+                placeholder="Hi Rakshitha, we were impressed by your profile and would like to talk..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="sendMessageBtn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <strong>Rakshitha E</strong>
+        <p>Software Developer &bull; Bengaluru, India</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+        <a href="https://github.com/171rakshi/Quickcare" target="_blank" rel="noopener noreferrer">QuickCare GitHub &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Modal 1: Readify Deep Dive Explanation Modal -->
+  <div id="readifyModal" class="modal-backdrop hidden">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div>
+          <span class="badge-ai">AI & Speech Recognition</span>
+          <h3>Readify: Architectural Deep Dive</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('readifyModal')">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <p><strong>Readify</strong> was developed to address reading fluency, cadence, and comprehension hurdles through
+          real-time algorithmic audio analysis.</p>
+
+        <h4>1. Real-Time Speech Processing Pipeline</h4>
+        <p>The client interface captures microphone input streams through the Web Audio API and transmits digitized
+          chunks to the Python speech recognition backend. The engine performs noise cancellation, phoneme separation,
+          and compares vocalized words against the reference text corpus.</p>
+
+        <h4>2. Natural Language Processing & Fluency Scoring</h4>
+        <p>The NLP pipeline assesses:</p>
+        <ul class="bullet-list">
+          <li><strong>Words Per Minute (WPM):</strong> Dynamic calculation filtering hesitation pauses.</li>
+          <li><strong>Pronunciation Clarity:</strong> Phonetic distance metric scoring syllable articulation.</li>
+          <li><strong>Comprehension Confidence:</strong> Adaptive assessment tracking reading rhythm and pauses.</li>
+        </ul>
+
+        <h4>3. Interactive React Dashboard</h4>
+        <p>Built with React.js, featuring real-time visual cadence charts, historical progress metrics, and algorithmic
+          recommendations suggesting graded texts tailored to the reader's fluency level.</p>
+
+        <div class="modal-callout">
+          <strong>Deployment Notice:</strong> The cloud backend is currently being packaged for containerized
+          deployment. The direct public URL will be connected here shortly.
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-primary" onclick="closeModal('readifyModal')">Close Explanation</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: ActivLine Architecture Modal -->
+  <div id="activLineModal" class="modal-backdrop hidden">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div>
+          <span class="status-confidential">Enterprise Internal System</span>
+          <h3>ActivLine: Architecture Specifications</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('activLineModal')">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <h4>1. Controller-Service-Repository Pattern</h4>
+        <p>Codebase is organized strictly into decoupled tiers:</p>
+        <ul class="bullet-list">
+          <li><strong>Controllers:</strong> Handle HTTP request/response lifecycles, route parameters, and execute Joi
+            schema validation.</li>
+          <li><strong>Services:</strong> Encapsulate multi-tenant billing logic, Razorpay invoice reconciliation, and
+            automated email/SMS dispatches.</li>
+          <li><strong>Repositories:</strong> Manage persistent queries across MongoDB and PostgreSQL databases,
+            abstracting ORM/ODM complexities.</li>
+        </ul>
+
+        <h4>2. Third-Party Integration & Scheduled Reconciliation</h4>
+        <p>Integrated 4+ third-party REST APIs. To counteract intermittent network dropouts and gateway timeouts,
+          automated scheduled cron workers cross-reference Razorpay webhooks against subscriber database records,
+          reducing ledger mismatches by 98%.</p>
+
+        <h4>3. Automated Reporting & Real-Time Sync</h4>
+        <p>Dynamic PDF invoice generation using PDFKit, automated monthly billing Excel exports using ExcelJS, and live
+          session updates driven by Socket.io.</p>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-primary" onclick="closeModal('activLineModal')">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: JOMS Architecture Modal -->
+  <div id="jomsModal" class="modal-backdrop hidden">
+    <div class="modal-window">
+      <div class="modal-head">
+        <div>
+          <span class="status-confidential">Enterprise Internal Platform</span>
+          <h3>JOMS: Marketplace Architecture</h3>
+        </div>
+        <button class="modal-close" onclick="closeModal('jomsModal')">&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <h4>1. Marketplace Coordination for 100+ Users</h4>
+        <p>Engineered full-stack venue booking, expert consulting, and subscription management pipelines with
+          concurrency control for calendar slots.</p>
+
+        <h4>2. Administrative Governance & Bulk Actions</h4>
+        <p>Equipped administrators with granular approval workflows, bulk mutations, fuzzy search, and cursor-based
+          pagination for large data volumes.</p>
+
+        <h4>3. Media & Reporting Services</h4>
+        <p>Integrated Cloudinary for image and credential uploads, alongside ExcelJS for generating automated financial
+          reports.</p>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-primary" onclick="closeModal('jomsModal')">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: Resume Viewer Modal -->
+  <div id="resumeModal" class="modal-backdrop hidden">
+    <div class="modal-window resume-window">
+      <div class="modal-head">
+        <h3>Rakshitha E &mdash; Resume Overview</h3>
+        <button class="modal-close" onclick="closeModal('resumeModal')">&times;</button>
+      </div>
+      <div class="modal-body-content resume-preview-body">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h2>RAKSHITHA E</h2>
+            <p>+91 9686344910 &bull; rakshithasannira2003@gmail.com &bull; Bengaluru, India</p>
+          </div>
+          <hr class="resume-divider">
+          <h4>OBJECTIVE</h4>
+          <p class="resume-text">Software developer seeking a role where I can build scalable, secure
+            web applications using Node.js, Express.js, Python, Django, MongoDB and PostgreSQL. Bringing hands-on
+            experience delivering full-stack solutions, REST APIs, role-based access control and third-party integrations in
+            production SaaS products.</p>
+
+          <h4>TECHNICAL SKILLS</h4>
+          <p class="resume-text"><strong>Languages:</strong> Python, TypeScript, JavaScript, SQL</p>
+          <p class="resume-text"><strong>Backend:</strong> Node.js, Express.js, Django, REST APIs, API Integrations,
+            Controller-Service-Repository Architecture, Joi</p>
+          <p class="resume-text"><strong>Databases:</strong> MongoDB, PostgreSQL</p>
+          <p class="resume-text"><strong>Auth & Security:</strong> JWT, Role-Based Access Control (RBAC), OTP Workflows
+          </p>
+          <p class="resume-text"><strong>Testing:</strong> Vitest</p>
+          <p class="resume-text"><strong>Tools:</strong> Git, Socket.io, Razorpay, Firebase, Cloudinary, PDFKit, ExcelJS
+          </p>
+          <p class="resume-text"><strong>Frontend:</strong> React.js (React 19), Vite, TanStack Query, TanStack Table,
+            Zustand, React Router, HTML, CSS</p>
+
+          <h4>EXPERIENCE</h4>
+          <p class="resume-text"><strong>MERN Stack Developer &bull; Kods Technologies Private Limited</strong> (6
+            Months)<br>
+            ActivLine ISP Customer Management Platform &bull; JOMS Marketplace Management Platform</p>
+          <p class="resume-text"><strong>Python Full Stack Development Intern &bull; PySpiders</strong> (Apr 2025 – Oct
+            2025)</p>
+          <p class="resume-text"><strong>Full Stack Development Intern &bull; Campus To Technical Careers</strong> (3
+            Months)</p>
+
+          <h4>EDUCATION</h4>
+          <p class="resume-text"><strong>B.E. in Computer Science &bull; MVJ College of Engineering, Bengaluru</strong>
+            (2021 – 2025 | CGPA: 8.34)</p>
+          <p class="resume-text"><strong>PUC (PCMB) &bull; Sri Vasavi P U College, Challakere</strong> (2021 | 92.8%)
+          </p>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn btn-secondary" onclick="window.print()">🖨️ Print Resume</button>
+        <button class="btn btn-primary" onclick="closeModal('resumeModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Toast Notification -->
+  <div id="portfolioToast" class="toast hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
